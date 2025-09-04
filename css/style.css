@@ -1,0 +1,149 @@
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-bg {
+    background: linear-gradient(-45deg, #f784c5, #1b602f, #000072, #f784c5);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text-stroke-black {
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-stroke-white {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.loading-spinner {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 3px solid #f784c5;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.file-drop-area {
+    transition: all 0.3s ease;
+}
+
+.file-drop-area.dragover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(247, 132, 197, 0.3);
+}
+
+.btn-glow {
+    box-shadow: 0 0 20px rgba(247, 132, 197, 0.5);
+    transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 30px rgba(247, 132, 197, 0.8);
+    transform: translateY(-2px);
+}
+
+.preview-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+/* Color-blind friendly filters */
+.protanopia {
+    filter: url("#protanopia");
+}
+
+.deuteranopia {
+    filter: url("#deuteranopia");
+}
+
+.tritanopia {
+    filter: url("#tritanopia");
+}
+
+/* Original shades */
+.original-pink {
+    background: #f784c5 !important;
+}
+
+.original-green {
+    background: #1b602f !important;
+}
+
+/* Reverse duotone */
+.reverse-duotone {
+    filter: grayscale(100%) contrast(1.2);
+    position: relative;
+}
+
+.reverse-duotone::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #1b602f 0%, #f784c5 100%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.reverse-duotone::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #f784c5 0%, #1b602f 100%);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
