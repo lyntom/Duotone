@@ -27,19 +27,6 @@ Tanpa instalasi, tanpa daftar—cukup drag-drop atau klik, lalu unduh hasilnya.
 
 ---
 
-## 📁 Struktur File
-duotone-brave-pink-hero-green/
-├── index.html          # Halaman utama
-├── css/
-│   ├── tailwind-3.4.17.css   # Tailwind (lokal)
-│   └── style.css             # Gaya custom
-├── js/
-│   └── custom.js             # Logika duotone & DOM
-└── images/
-└── favicon.png           # Ikon tab browser
-
----
-
 ## 🛠️ Teknologi
 - HTML5 + Tailwind CSS 3.4.17  
 - Canvas API (image processing)  
@@ -51,7 +38,7 @@ duotone-brave-pink-hero-green/
 ## 📸 Contoh Hasil
 | Foto Asli | Setelah Duotone |
 |-----------|-----------------|
-| ![before](demo/sebelum.jpg) | ![after](demo/sesudah.jpg) |
+| ![before](demo/sebelum.jpg) | ![after](demo/sesudah.png) |
 
 ---
 
