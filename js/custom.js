@@ -100,8 +100,8 @@ function applyDuoToneEffect(imageSrc) {
 
     const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const data = imgData.data;
-    const rgb1 = hexToRgb(color1.value);
-    const rgb2 = hexToRgb(color2.value);
+    const rgb1 = hexToRgb(color2.value);
+    const rgb2 = hexToRgb(color1.value);
 
     for (let i = 0; i < data.length; i += 4) {
       const gray = data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114;
