@@ -23,42 +23,56 @@
       </div>
 
       <!-- Panel Warna -->
-      <div class="glass-effect rounded-2xl p-6 mb-6">
+      <div class="glass-effect rounded-2xl p-4 sm:p-6 mb-6">
         <h2 class="text-white text-center font-semibold mb-4">
           Pilih Warna Duotone
         </h2>
-        <div class="flex items-center justify-center gap-4">
-          <div class="flex items-center gap-2">
+
+        <div
+          class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4"
+        >
+          <!-- Warna 1 -->
+          <div
+            class="flex items-center justify-between sm:justify-center gap-3 bg-white/5 rounded-xl px-4 py-3"
+          >
             <label class="text-white/80 text-sm">Warna 1</label>
-            <input
-              type="color"
-              id="color1"
-              value="#f784c5"
-              class="w-10 h-10 rounded cursor-pointer"
-            />
-            <input
-              type="text"
-              id="hex1"
-              value="#f784c5"
-              maxlength="7"
-              class="w-28 px-2 py-1 rounded bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-pink-400"
-            />
+            <div class="flex gap-2">
+              <input
+                type="color"
+                id="color1"
+                value="#f784c5"
+                class="w-10 h-10 rounded cursor-pointer"
+              />
+              <input
+                type="text"
+                id="hex1"
+                value="#f784c5"
+                maxlength="7"
+                class="w-24 px-2 py-1 rounded bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              />
+            </div>
           </div>
-          <div class="flex items-center gap-2">
+
+          <!-- Warna 2 -->
+          <div
+            class="flex items-center justify-between sm:justify-center gap-3 bg-white/5 rounded-xl px-4 py-3"
+          >
             <label class="text-white/80 text-sm">Warna 2</label>
-            <input
-              type="color"
-              id="color2"
-              value="#1b602f"
-              class="w-10 h-10 rounded cursor-picker"
-            />
-            <input
-              type="text"
-              id="hex2"
-              value="#1b602f"
-              maxlength="7"
-              class="w-28 px-2 py-1 rounded bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
+            <div class="flex gap-2">
+              <input
+                type="color"
+                id="color2"
+                value="#1b602f"
+                class="w-10 h-10 rounded cursor-pointer"
+              />
+              <input
+                type="text"
+                id="hex2"
+                value="#1b602f"
+                maxlength="7"
+                class="w-24 px-2 py-1 rounded bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-green-400"
+              />
+            </div>
           </div>
         </div>
       </div>
